@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function eski_foto(){
+        document.getElementById("resim").src="img1.jpg";
+    }
+    function yeni_foto(){
+        document.getElementById("resim").src="img5.jpg";
+    }
+    function buyuk_foto(source){
+        document.getElementById("resim3").src=source;
+        document.getElementById("resim3").style.witdh="500px";
+        document.getElementById("resim3").style.height="500px";
+    }
+    function kucuk_foto(source){
+        document.getElementById("resim3").src=source
+        document.getElementById("resim3").style.witdh="100px";
+        document.getElementById("resim3").style.height="100px";
+    }
+    </script>
+ <img src="img1.jpg" id="resim" style="height: 250px;width: 250px;" onmousemove="yeni_foto()" onmouseout="eski_foto()">
+ <img src="img1.jpg" id="resim3"  onmousemove="buyuk_foto(this.src)" onmouseout="kucuk_foto(this.src)">
+ <img src="" id="resim3">
+
+
+
+
+
+
+
+</body>
+</html>

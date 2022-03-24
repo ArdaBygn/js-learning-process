@@ -1,0 +1,42 @@
+
+<html>
+<head>
+    <title>Boyama</title>
+<style>
+body{
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image: url('deneme11.png');
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+        <input type="color" id="boya" name="fname" value="">
+
+
+
+
+
+<div id="sonuc" style="width: 100px;height: 100px;margin-left: 500px;">
+<script>
+        var renksecme=document.getElementById("boya");
+        renksecme.onchange=function(){
+       document.getElementById("sonuc").style.backgroundColor=
+       document.getElementById("boya").value;
+   }
+
+
+</script>
+</div>
+
+
+
+    
+</body>
+</html>

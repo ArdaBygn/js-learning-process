@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Uzunluk</title>
+</head>
+
+<body>
+    <script>
+
+        function kmtomil() {
+            var sayi = document.getElementById("uzunluk").value;
+            sayi = Number(sayi);
+            var mil = 0.621 * sayi;
+            document.getElementById("hesapla");
+        }
+
+
+    </script>
+
+    <input type="text" id="uzunluk" placeholder="Kilometre uzunluğunu girin">
+    <button type="button" onclick="kmtomil()">Hesapla</button>
+    <div id="hesapla"></div>
+
+
+
+
+
+
+
+</body>
+</html>
