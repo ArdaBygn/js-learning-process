@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>JavaScript</title>
+<style>
+.sekil{
+    width: 100px;
+    height: 100px;
+    color: black;
+    background-color:blue;
+    margin: 10px;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+<script>
+var sayi=0;
+var dizi=[0,1,2,3,4,5,6];
+function sahneyi_olustur(){
+    sayi+=1;
+    kelime=document.createElement("div");
+    kelime.id="k"+sayi;
+    kelime.className="sekil";
+    kelime.innerHTML=dizi[sayi];
+    document.body.appendChild(kelime);
+
+}
+</script>    
+
+<div id="yeni"></div>
+<button onclick="sahneyi_olustur();">TIKLA</button>
+
+
+
+
+
+
+</body>
+</html>
